@@ -1,0 +1,118 @@
+@import 'components/button.css';
+@import 'components/card.css';
+@import 'components/header.css';
+@import 'components/navigation.css';
+
+html {
+  color: var(--color1-jewel);
+  font-size: 16px;
+}
+
+body,
+header,
+main,
+footer,
+section {
+  /* border-radius: 0.5rem; */
+  padding: 0 1rem;
+  color: var(--color1-jewel);
+}
+
+body {
+}
+
+h1 {
+}
+
+header {
+}
+
+nav {
+}
+
+.nav-list {
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--color1-jewel);
+}
+
+.nav-item:hover {
+  text-decoration: underline var(--color2-jewel);
+  color: var(--color3-jewel);
+}
+
+main {
+}
+
+.card {
+}
+
+.bookmark {
+  width: 40px;
+}
+
+.question {
+}
+
+.answer-button {
+}
+
+.answer {
+}
+
+.tag-list {
+  /* list-style: none;
+  display: flex;
+  padding-left: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px; */
+}
+
+.tag-item {
+}
+
+footer {
+}
+
+.footer-text {
+}
+
+.goto-top {
+  /* width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--color1-jewel);
+  color: var(--color1-basic);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+  z-index: 1; */
+}
+
+a[href^='http'] {
+  color: var(--color4-jewel);
+}
+
+/* a {
+  color: var(--color3-basic);
+} */
+
+/* a:hover, a:focus-visible {
+    color: var(--color1-basic);
+    text-decoration: none;
+  } */
+
+::selection {
+  background-color: var(--color3-jewel);
+  color: var(--color3-basic);
+}

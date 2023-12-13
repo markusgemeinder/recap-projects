@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index-old.js" defer></script>
+  </head>
+  <body>
+
+    <!-- TODO implement root functionality (components and utils, functions import + export) -->
+    <header class="header">
+      <h1 class="header__title">Quiz-App</h1>
+    </header>
+    <main>
+      <ul class="card-list">
+        <!--
+                FIRST CARD
+              -->
+        <li class="card-list__item">
+          <article class="card">
+            <h2 class="card__question">
+              In the Kingdom Heart series who provides the english voice for
+              Master Eraqus?
+            </h2>
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="button-answer"
+            >
+              Show answer
+            </button>
+            <p class="card__answer" data-js="card-answer">Mark Hamill</p>
+            <ul class="card__tag-list">
+              <li class="card__tag-list-item">#kingdomheart</li>
+              <li class="card__tag-list-item">#mastereraqus</li>
+              <li class="card__tag-list-item">#english voices</li>
+            </ul>
+            <div class="card__button-bookmark">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="button-bookmark"
+              >
+                <svg
+                  class="bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+        <!--
+                SECOND CARD
+              -->
+        <li class="card-list__item">
+          <article class="card">
+            <h2 class="card__question">
+              Daniel Radcliffe became a global star in the film industry due to
+              his performance in which film franchise?
+            </h2>
+            <button class="card__button-answer" type="button">
+              Show answer
+            </button>
+            <p class="card__answer card__answer--active">Harry Potter</p>
+            <ul class="card__tag-list">
+              <li class="card__tag-list-item">#danielradcliffe</li>
+              <li class="card__tag-list-item">#hewhomustnotbenamed</li>
+              <li class="card__tag-list-item">#abracadabra</li>
+            </ul>
+            <div class="card__button-bookmark">
+              <button
+                class="bookmark bookmark--active"
+                aria-label="bookmark"
+                type="button"
+              >
+                <svg
+                  class="bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+        <!--
+                THIRD CARD
+              -->
+        <li class="card-list__item">
+          <article class="card">
+            <h2 class="card__question">
+              Which former US president was nicknamed &quot;Teddy&quot; after he
+              refused to shoot a defenseless black bear?
+            </h2>
+            <button class="card__button-answer" type="button">
+              Show answer
+            </button>
+            <p class="card__answer">Theodore Roosevelt</p>
+            <ul class="card__tag-list">
+              <li class="card__tag-list-item">#usa</li>
+              <li class="card__tag-list-item">#president</li>
+              <li class="card__tag-list-item">#teddybear</li>
+            </ul>
+            <div class="card__button-bookmark">
+              <button class="bookmark" aria-label="bookmark" type="button">
+                <svg
+                  class="bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+
+    <!-- TODO svg >>> how to format by .css -->
+    <!-- TODO navigation @media >>> buttons small flexbox besides -->
+    <!-- TODO install go up to page top button -->
+    
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item navigation__list-item--active">
+          <a
+            class="navigation__link"
+            href="/index.html"
+            aria-label="go to home page"
+          >
+          <svg width="100%" height="100%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path id="home-mg" d="M70,475L430,475L430,205L70,205L70,475ZM34,205L466,205L250,25L34,205Z" style="fill:none;stroke:white;stroke-width:40px;"/>
+        </svg>
+        </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="/bookmarks.html"
+            aria-label="go to bookmarks page"
+          >
+          <svg width="100%" height="100%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <g transform="matrix(0.213023,0,0,0.2,-69.5345,-125)">
+                <path d="M750,849.836C750,794.698 791.966,750 843.733,750C1112.96,750 1886.48,750 2156.02,750C2180.94,750 2204.85,760.546 2222.47,779.319C2240.1,798.092 2250,823.553 2250,850.102C2250,1286.39 2250,3000 2250,3000L1500,2250L750,3000L750,849.836Z" style="fill:none;stroke:white;stroke-width:193.6px;"/>
+            </g>
+        </svg>
+        </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="/form.html"
+            aria-label="add question"
+          >
+          <svg width="100%" height="100%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M250,25C374.181,25 475,125.819 475,250C475,374.181 374.181,475 250,475C125.819,475 25,374.181 25,250C25,125.819 125.819,25 250,25ZM130,250L370,250M250,370L250,130" style="fill:none;stroke:white;stroke-width:40px;"/>
+          </a>
+        </li>
+
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="/profile.html"
+            aria-label="go to profile page"
+          >
+          <svg width="100%" height="100%" viewBox="0 0 500 500">
+            <path id="profile-mg" d="M250,85.718C293.118,85.718 328.125,120.725 328.125,163.843C328.125,206.962 293.118,241.968 250,241.968C206.882,241.968 171.875,206.962 171.875,163.843C171.875,120.725 206.882,85.718 250,85.718ZM125,434.203L125,296.59C125,273.375 149.815,264.498 166.667,261.674C249.053,247.866 250.947,247.866 333.333,261.674C350.185,264.498 375,276.881 375,296.59L375,434.203M250,25C374.181,25 475,125.819 475,250C475,374.181 374.181,475 250,475C125.819,475 25,374.181 25,250C25,125.819 125.819,25 250,25Z" style="fill:none;stroke:white;stroke-width:40px;"/>
+          </svg>
+                  </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

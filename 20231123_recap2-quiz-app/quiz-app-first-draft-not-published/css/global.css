@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Markus Gemeinder Handschrift', 'Istok Web', Arial, Helvetica,
+    sans-serif;
+  src: url(../fonts/MarkusGemeinderHandschrift-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Markus Gemeinder Handschrift', 'Istok Web', Arial, Helvetica,
+    sans-serif;
+}
+
+:root {
+  /* color definitions */
+
+  --color1-basic: #32393d;
+  --color2-basic: #32393d80; /* 80 Hex == 127 Dezimal == 50% Deckkraft*/
+  --color3-basic: #d4d9dc;
+  --color4-basic: #ffffff;
+
+  --color1-jewel: #f26522;
+  --color2-jewel: #e63312;
+  --color3-jewel: #f8b290;
+  --color4-jewel: #fce0d4;
+
+  --color1: #dd5471;
+  --color2: #f8d377;
+  --color3: #62d3a4;
+  --color4: #204f98;
+  --color5: #70c6ec;
+  --color6: #33ff33;
+
+  /* unit definitions */
+
+  --gap: 20px;
+  --padding: 10px;
+  --margin: 10px;
+  --border-radius: 0.2rem;
+  --box-shadow: #32393d40 2px 2px 2px;
+
+  --header-title: 4rem;
+  --header-title-line-height: 7rem;
+
+  --header-text: 1.5rem;
+  --header-text-line-height: 2rem;
+
+  --regular-text: 1rem;
+  --regular-line-height: 1.5rem;
+
+  /* calculating height */
+
+  --header-height: calc(
+    var(--header-title-line-height) + var(--header-text-line-height) +
+      (3 * var(--gap))
+  );
+
+  /* calculating nav height */
+
+  --nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
+
+  /* calculating the exact margin required to put the main content right under the header and nav*/
+
+  --main-content-margin-top: calc(var(--header-height) + var(--nav-height));
+}
